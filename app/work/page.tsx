@@ -20,7 +20,7 @@ const projects = [
 		num: '01',
 		category: 'librosClub',
 		title: 'project 1',
-		description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, sint veritatis. Itaque cum deserunt corporis!',
+		description: 'A full-stack web application designed to connect readers through book exchange, reading clubs, and community building.',
 		stack: [
 			{
 				name: "React"
