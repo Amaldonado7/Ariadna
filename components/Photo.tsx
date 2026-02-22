@@ -20,7 +20,7 @@ const Photo = () => {
 					className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute"
 				>
 					<Image
-						src="/assets/ari-logo.png"
+						src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/assets/ari-logo.png`}
 						priority
 						quality={100}
 						fill

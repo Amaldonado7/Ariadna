@@ -32,7 +32,7 @@ const projects = [
 				name: "Node.js"
 			},
 		],
-		image: '/assets/work/librosclub.png',
+		image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/assets/work/librosclub.png`,
 		live: "",
 		github: ""
 	},
@@ -49,7 +49,7 @@ const projects = [
 				name: "Tailwind.css"
 			},
 		],
-		image: '/assets/work/dummy-image-square.jpg',
+		image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/assets/work/dummy-image-square.jpg`,
 		live: "",
 		github: ""
 	},
