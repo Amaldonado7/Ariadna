@@ -1,12 +1,10 @@
-const repo = 'Ariadna';
-const isProd = process.env.NODE_ENV === 'production';
+const repo = "Ariadna";
+const isProd = process.env.NODE_ENV === "production";
 
-const nextConfig = {
-  output: 'export',              // genera /out
-  images: { unoptimized: true }, // GitHub Pages no soporta el optimizador por defecto
+export default {
+  output: "export",
   trailingSlash: true,
-  basePath: isProd ? `/${repo}` : '',
-  assetPrefix: isProd ? `/${repo}/` : '',
+  basePath: isProd ? `/${repo}` : "",
+  assetPrefix: isProd ? `/${repo}/` : "",
+  images: { unoptimized: true },
 };
-
-export default nextConfig;
