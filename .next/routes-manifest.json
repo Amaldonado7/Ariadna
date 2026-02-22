@@ -3,20 +3,49 @@
   "pages404": true,
   "appType": "app",
   "caseSensitive": false,
-  "basePath": "",
+  "basePath": "/Ariadna",
   "redirects": [
     {
-      "source": "/:path+/",
-      "destination": "/:path+",
+      "source": "/Ariadna",
+      "destination": "/Ariadna/",
+      "basePath": false,
       "internal": true,
       "priority": true,
       "statusCode": 308,
-      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+      "regex": "^/Ariadna$"
+    },
+    {
+      "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",
+      "destination": "/:file",
+      "internal": true,
+      "priority": true,
+      "missing": [
+        {
+          "type": "header",
+          "key": "x-nextjs-data"
+        }
+      ],
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+))/$"
+    },
+    {
+      "source": "/:notfile((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+)",
+      "destination": "/:notfile/",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+))$"
     }
   ],
   "headers": [],
   "rewrites": {
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/Ariadna//_next/:path+",
+        "destination": "/Ariadna/_next/:path+",
+        "regex": "^/Ariadna//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
+      }
+    ],
     "afterFiles": [],
     "fallback": []
   },

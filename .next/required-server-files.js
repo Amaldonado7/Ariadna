@@ -9,7 +9,7 @@ self.__SERVER_FILES_MANIFEST={
     "typedRoutes": false,
     "distDir": ".next",
     "cleanDistDir": true,
-    "assetPrefix": "",
+    "assetPrefix": "/Ariadna/",
     "cacheMaxMemorySize": 52428800,
     "configOrigin": "next.config.ts",
     "useFileSystemPublicRoutes": true,
@@ -42,7 +42,7 @@ self.__SERVER_FILES_MANIFEST={
         256,
         384
       ],
-      "path": "/_next/image",
+      "path": "/Ariadna/_next/image/",
       "loader": "default",
       "loaderFile": "",
       "domains": [],
@@ -67,7 +67,7 @@ self.__SERVER_FILES_MANIFEST={
       "qualities": [
         75
       ],
-      "unoptimized": false
+      "unoptimized": true
     },
     "devIndicators": {
       "position": "bottom-left"
@@ -76,9 +76,9 @@ self.__SERVER_FILES_MANIFEST={
       "maxInactiveAge": 60000,
       "pagesBufferLength": 5
     },
-    "basePath": "",
+    "basePath": "/Ariadna",
     "sassOptions": {},
-    "trailingSlash": false,
+    "trailingSlash": true,
     "i18n": null,
     "productionBrowserSourceMaps": false,
     "excludeDefaultMomentLocales": true,
@@ -92,6 +92,7 @@ self.__SERVER_FILES_MANIFEST={
     "compiler": {},
     "expireTime": 31536000,
     "staticPageGenerationTimeout": 60,
+    "output": "export",
     "modularizeImports": {
       "@mui/icons-material": {
         "transform": "@mui/icons-material/{{member}}"
@@ -100,7 +101,7 @@ self.__SERVER_FILES_MANIFEST={
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/ariadna.maldonado/Documents/librosClub/Cocotlandia",
+    "outputFileTracingRoot": "/Users/ariadna.maldonado/Documents/librosClub/Ariadna",
     "cacheComponents": false,
     "cacheLife": {
       "default": {
@@ -293,11 +294,11 @@ self.__SERVER_FILES_MANIFEST={
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "/Users/ariadna.maldonado/Documents/librosClub/Cocotlandia"
+      "root": "/Users/ariadna.maldonado/Documents/librosClub/Ariadna"
     },
     "distDirRoot": ".next"
   },
-  "appDir": "/Users/ariadna.maldonado/Documents/librosClub/Cocotlandia",
+  "appDir": "/Users/ariadna.maldonado/Documents/librosClub/Ariadna",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
