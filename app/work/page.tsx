@@ -23,7 +23,7 @@ interface SwiperType {
 const Work = () => {
 	const { t } = useLang();
 	const projects = t.work.projects;
-	const [project, setProject] = useState(projects[0]);
+	const [project, setProject] = useState<typeof projects[number]>(projects[0]);
 
 	const handleSlideChange = (swiper: SwiperType) => {
 		setProject(projects[swiper.activeIndex]);
