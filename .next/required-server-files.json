@@ -1,7 +1,9 @@
 {
   "version": 1,
   "config": {
-    "env": {},
+    "env": {
+      "NEXT_PUBLIC_BASE_PATH": "/Ariadna"
+    },
     "webpack": null,
     "typescript": {
       "ignoreBuildErrors": false

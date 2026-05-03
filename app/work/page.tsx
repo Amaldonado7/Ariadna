@@ -104,7 +104,7 @@ const Work = () => {
 										<div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
 										<div className="relative w-full h-full">
 											<Image
-												src={p.image}
+												src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${p.image}`}
 												fill
 												className="object-cover"
 												alt={p.category}

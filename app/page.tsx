@@ -25,7 +25,7 @@ const Home = () => {
             {/** btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a
-                href="/assets/cv/ariadna-maldonado-cv.pdf"
+                href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/assets/cv/ariadna-maldonado-cv.pdf`}
                 download
                 target="_blank"
                 rel="noreferrer"
