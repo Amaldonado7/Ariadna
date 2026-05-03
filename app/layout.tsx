@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
+import Providers from "@/components/Providers";
 
 const jetbrainMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -22,15 +23,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${jetbrainMono.variable} antialiased`}
-      >
-        <Header />
-        <StairTransition />
-        <PageTransition>
-          {children}
-        </PageTransition>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${jetbrainMono.variable} antialiased`}>
+        <Providers>
+          <Header />
+          <StairTransition />
+          <PageTransition>
+            {children}
+          </PageTransition>
+        </Providers>
       </body>
     </html>
   );
