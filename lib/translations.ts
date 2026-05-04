@@ -101,8 +101,8 @@ export const translations = {
             'A full-stack web application designed to connect readers through book exchange, reading clubs, and community building.',
           stack: [{ name: 'React' }, { name: 'Tailwind.css' }, { name: 'Node.js' }],
           image: '/assets/work/librosclub.png',
-          live: '',
-          github: '',
+          live: 'https://librosclub.vercel.app/',
+          github: 'https://github.com/Amaldonado7/Ariadna',
         },
         {
           num: '02',
