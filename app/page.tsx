@@ -8,7 +8,7 @@ import { FiDownload } from "react-icons/fi";
 import { useLang } from "@/contexts/LangContext";
 
 const Home = () => {
-  const { t } = useLang();
+  const { t, lang } = useLang();
 
   return (
     <section className="h-full">
@@ -25,7 +25,7 @@ const Home = () => {
             {/** btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a
-                href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/assets/cv/ariadna-maldonado-cv.pdf`}
+                href={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/assets/cv/ariadna-maldonado-cv-${lang}.pdf`}
                 download
                 target="_blank"
                 rel="noreferrer"
